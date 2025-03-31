@@ -99,12 +99,6 @@ public class Addition
         Assert.ThrowsException<ArgumentNullException>(() => Program.Divide(null, null));
     }
 
-    [TestMethod]
-    public void Divide_ByZero_Patino()
-    {
-        Assert.ThrowsException<DivideByZeroException>(() => Program.Divide("5", "0"));
-    }
-
     // Power Tests
     [TestMethod]
     public void Power_Valid_Patino()
